@@ -17,34 +17,47 @@
 
 html {
 	min-height:100%;
-	border:10px solid #ECEEF1;
-	color:#61666c;
+    background-color: #393630;
+    background-image: url("http://koding.com/images/koding-bg.png");
+    background-repeat: repeat-x;
+	text-shadow: black 0.1em 0.1em 0.2em;
+    color: #fff;
 	font-weight:400;
 	font-size:1em;
 	font-family:'Open Sans', sans-serif;
 	line-height:2em;
 }
 body {
-	padding:20px;
+	padding:15px;
 	-webkit-backface-visibility:hidden;
 }
 code {
 	font-family:consolas,monospace;	
 }
 a {
-	color:#61666c;
+	color:#fff;
 	text-decoration:none;
 }
 a:hover {
-	color:#2a2a2a;
+	color:#fcb738;
 }
 /*------------------------------------*\
     Wrapper
 \*------------------------------------*/
 .wrapper {
 	margin:0 auto;
-	padding-top:20px;
 	max-width:900px;
+}
+.logo {
+    width: 120px;
+    height: 30px;
+    background-position: -240px -40px;
+    background-image: url("https://koding.com/images/_kd.sprites.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
 }
 /*------------------------------------*\
     Demo block
@@ -68,7 +81,7 @@ tr {
 	border:0;
 }
 tr:hover td {
-	background:#f6f6f6;
+	background:rgba(0,0,0,0.5);
 }
 th {
 	text-align:left;
@@ -104,7 +117,7 @@ td {
 	        transition:background 300ms ease;
 }
 tr.parent a {
-	color:#9099A3;
+	color:#f3f3f3;
 }
 	.parent a:hover {
 		color:#2281d0;
