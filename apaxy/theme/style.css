@@ -47,6 +47,7 @@ a:hover {
 .wrapper {
 	margin:0 auto;
 	max-width:900px;
+	display: none;
 }
 .logo {
     width: 120px;
