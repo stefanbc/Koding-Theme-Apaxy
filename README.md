@@ -1,5 +1,5 @@
 #Koding Theme Apaxy
-This is a theme inspired by the Koding.com interface for Apaxy by Adam Whitcroft.
+This is a theme inspired by the Koding.com interface made for Apaxy by Adam Whitcroft.
 
 This repo contains only the files that need to be replaced for the Koding Theme (stored in the same file order as the original Apaxy). For the full Apaxy repo please visit [adamwhitcroft.com/apaxy](http://adamwhitcroft.com/apaxy/).
 
