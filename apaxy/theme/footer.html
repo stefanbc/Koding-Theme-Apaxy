@@ -1,14 +1,12 @@
-	<div class="block">
-		You can add your own HTML above or below the directory listing. Simply explore the <code>header.html</code> and <code>footer.html</code> files.
-	</div><!--/.postlisting-->
-
 </div><!--/.wrapper-->
 
 <div class="footer">
-	Koding Theme by <a href="https://twitter.com/stefanbc">@stefanbc</a>. Apaxy by <a href="https://twitter.com/adamwhitcroft">@adamwhitcroft</a>
+	Koding Theme by <a href="https://koding.com/stefanbc">@stefanbc</a>. Apaxy by <a href="https://twitter.com/adamwhitcroft">@adamwhitcroft</a>
 </div><!--/.footer-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
-$('tr:nth-child(2)').addClass('parent');
-$('.wrapper').slideDown(1500);
+	$('tr:nth-child(2)').addClass('parent');
+	$('.wrapper').fadeIn(2500);
+	var name = $(location).attr('href');
+	$("#name").html("Current location: " + name.substring(7));
 </script>

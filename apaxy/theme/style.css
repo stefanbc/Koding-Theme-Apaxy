@@ -2,8 +2,8 @@
     Apaxy
     by @adamwhitcroft
 
-    Theme name: Apaxy
-    Theme author: @adamwhitcroft
+    Theme name: Koding
+    Theme author: @stefanbc
 \*------------------------------------*/
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 /* Have to use @import for the font, as you can only specify a single stylesheet */
@@ -16,37 +16,33 @@
 }
 
 ::-moz-selection {
-    background: rgba(255, 185, 41,.5)
+    background: rgba(1,175,90,.5);
 }
 ::selection {
-    background: rgba(255, 185, 41,.5)
+    background: rgba(1,175,90,.5);
 }
 
 html {
 	min-height:100%;
-    background-color: #393630;
-    background-image: url("http://koding.com/images/koding-bg.png");
-    background-repeat: repeat-x;
-	text-shadow: black 0.1em 0.1em 0.2em;
-    color: #fff;
+    background-color: #e4e4e4;
+    color: #3c4752;
 	font-weight:400;
 	font-size:1em;
 	font-family:'Open Sans', sans-serif;
 	line-height:2em;
 }
 body {
-	padding:15px;
 	-webkit-backface-visibility:hidden;
 }
 code {
 	font-family:consolas,monospace;	
 }
 a {
-	color:#fff;
+	color: #3c4752;
 	text-decoration:none;
 }
 a:hover {
-	color:#fcb738;
+	color: #01af5a;
 }
 /*------------------------------------*\
     Wrapper
@@ -56,16 +52,22 @@ a:hover {
 	max-width:900px;
 	display: none;
 }
+header {
+    width: 100%;
+    background-color: #1e2628;
+    color: #fff;
+}
 .logo {
-    width: 120px;
-    height: 30px;
-    background-position: -240px -40px;
-    background-image: url("https://koding.com/images/_kd.sprites.png");
+    width: 60px;
+    height: 60px;
+    background-image: url("http://blog.koding.com/wp-content/themes/basic/images/kodinglogo.png");
     background-color: transparent;
     background-repeat: no-repeat;
-    display: block;
+    background-size: 60px;
+    display: inline-block;
     overflow: hidden;
-    margin-bottom: 15px;
+    vertical-align: middle;
+    margin-right: 20px;
 }
 /*------------------------------------*\
     Demo block
@@ -82,7 +84,6 @@ a:hover {
 table {
 	width:100%;
 	border-collapse:collapse;
-	font-size:.875em;
 }
 tr {
 	outline:0;
@@ -90,11 +91,17 @@ tr {
 }
 tr:hover td {
 	background:rgba(0,0,0,0.5);
+	color: #fff;
+}
+tr:hover td a {
+    color: #fff;
 }
 th {
-	text-align:left;
-	font-size:.75em;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
 	padding-right:20px;
+	padding-top: 20px;
 }
 /* 2nd Column: Filename */
 th + th {
@@ -115,7 +122,6 @@ td {
 	padding:5px 0;
 	outline:0;
 	border:0;
-	border-bottom:1px solid #edf1f5;
 	vertical-align:middle;
 	text-align:left;
 	-webkit-transition:background 300ms ease;
@@ -125,15 +131,22 @@ td {
 	        transition:background 300ms ease;
 }
 tr.parent a {
-	color:#f3f3f3;
+	color:#01af5a;
 }
-	.parent a:hover {
-		color:#2281d0;
-	}
+.parent a:hover {
+	color:#01af5a;
+}
 /*------------------------------------*\
     Footer
 \*------------------------------------*/
 .footer {
-	text-align:center;
-	font-size:.75em;
+	text-align: center;
+    font-size: .75em;
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+    width: 900px;
+    margin: 10px auto 0 auto;
+}
+.footer a {
+    color: #01af5a;
 }
